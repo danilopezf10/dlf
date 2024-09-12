@@ -1,1 +1,21 @@
-/* You can add global styles to this file, and also import other style files */
+/* PrimeNG */
+// @import "primeng/resources/primeng.min.css";
+@import "primeng/resources/themes/vela-purple/theme.css";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+@import "primeng/resources/primeng.css";
+
+
+body {
+    // background-image: url("./assets/dark-background-1-tiled.png");
+    // background-color: var(--surface-500);
+    // background: radial-gradient(ellipse at top , rgba(10,10,10) 0%, rgba(30,30,30) 100%);
+     background: linear-gradient(95deg, rgba(10,10,10) 0%, rgba(10,10,10) 130%);
+    background-size: cover;
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
