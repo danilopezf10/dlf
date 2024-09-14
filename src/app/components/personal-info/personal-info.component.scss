@@ -1,0 +1,10 @@
+img {
+    border-top-left-radius: 5%;
+    border-bottom-left-radius: 5%;
+}
+
+.text-gradient {
+    background: -webkit-linear-gradient(60deg, var(--primary-600) 30%, var(--pink-600) 90%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
