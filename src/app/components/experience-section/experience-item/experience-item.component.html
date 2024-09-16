@@ -1,0 +1,42 @@
+<p-panel 
+  #expandablePanel 
+  styleClass="experience-panel cursor-pointer" 
+  [toggleable]="true" 
+  [collapsed]="collapsed ?? true" 
+  (click)="!companyUrlHovered ? expandablePanel.toggle($event) : null"
+> 
+  <ng-template pTemplate="header">
+    <div class="flex flex-column flex-1">
+      <div class="flex gap-3 title">
+        <p class="text-primary-600 text-lg mb-0"> 
+          {{title.toUpperCase()}} 
+          <span *ngIf="company" class="font-light text-primary-700">
+            AT 
+            <a 
+              href="{{url}}" 
+              target="_blank" 
+              (mouseenter)="companyUrlHovered=true" 
+              (mouseleave)="companyUrlHovered=false"
+              class="text-primary-900 hover:text-cyan-500 "
+            >
+              {{company.toUpperCase()}} 
+            </a>
+          </span>
+        </p>
+        <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--primary-700)'">
+          <i [class]="' ' + (expandablePanel.collapsed ? 'pi pi-chevron-down' : '')"></i> 
+        </div>
+      </div>
+
+      <p class="text-600 flex flex-wrap align-items-center gap-2  h-full align-content-end">
+        <span><i class="pi pi-map-marker mr-1 sm:mr-2"></i>{{location}}</span> <span class="hidden md:flex text-400">|</span> <span>{{date}}</span>
+      </p>
+    </div>
+  </ng-template>
+  <p #theDescription class="text-700 text-justify">
+    {{description}}
+  </p>
+  <div class="flex justify-content-center transition-duration-300'">    <!-- [class]="expandablePanel.collapsed ? 'text-100' : 'text-200' -->
+    <i [class]="'pi pi-chevron-up'"></i>
+  </div>
+</p-panel>

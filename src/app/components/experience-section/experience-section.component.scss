@@ -5,3 +5,9 @@
     max-width: 600px;
     margin-left: 0;
 }
+
+.gradient-bg {
+    background: linear-gradient(to right, var(--primary-600) 30%, var(--pink-600) 120%) ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}

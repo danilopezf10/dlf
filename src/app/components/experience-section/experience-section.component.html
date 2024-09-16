@@ -1,0 +1,20 @@
+<div class=" animation-duration-1000 animation-ease-in">
+  <span class="text-6xl gradient-bg">EXPERIENCE</span>
+  <!-- <span class="text-600 text-6xl font-light">EXPERIENCE</span> -->
+  <!-- <hr class="hr-gradient" /> -->
+  <div class="flex flex-column align-items-center gap-5 mt-5 ml-5">
+    <app-experience-item
+      *ngFor="let experienceItem of experienceItems"
+      [collapsed]="experienceItem.collapsed"
+      [title]="experienceItem.title"
+      [company]="experienceItem.company"
+      [location]="experienceItem.location"
+      [date]="experienceItem.date"
+      [description]="experienceItem.description"
+      [primaryTechs]="experienceItem.primaryTechs"
+      [secondaryTechs]="experienceItem.secondaryTechs"
+      [otherTechs]="experienceItem.otherTechs"
+      [url]="experienceItem.url"
+    ></app-experience-item>
+  </div>
+</div>
