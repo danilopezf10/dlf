@@ -1,10 +1,14 @@
-<div class="main-wrapper">
-  <div class="main">
-    <div class="py-8">
-      <app-personal-info></app-personal-info>
-    </div>
-    <div class="py-8 mt-5">
-      <app-experience-section></app-experience-section>
-    </div>
+<div class="sections-wrapper">
+  <div class="section py-8">
+    <app-personal-info></app-personal-info>
+  </div>
+  <!-- <div class="blur-line"></div> -->
+  <div class="section pb-8 pt-0 sm:pt-5" style="margin-top: 8rem;">
+    <div class="experience-bg" appParallax [ratio]="1"></div>
+    <app-experience-section ></app-experience-section>
+  </div>
+  <div class="section py-8 w-full" >
+    <div class="other-projects-bg" appParallax [ratio]="1" ></div>    <!-- style="background: linear-gradient(to right, black 30%, var(--pink-600) 220%) ;" -->
+    <app-other-projects-section></app-other-projects-section>
   </div>
 </div>
