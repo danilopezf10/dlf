@@ -1,8 +1,8 @@
 <div class=" animation-duration-1000 animation-ease-in flex flex-column align-items-center gap-7">
-  <span class="text-6xl gradient-bg">EXPERIENCE</span>
+  <span class="text-6xl font-light">EXPERIENCE</span>
   <!-- <span class="text-600 text-6xl font-light">EXPERIENCE</span> -->
   <!-- <hr class="hr-gradient" /> -->
-  <div class="flex flex-column align-items-center gap-5 p-5" style="max-height: 550px; overflow: scroll; border-radius: 20px; background-color: rgb(0,0,0,0.9); border: 1px solid rgb(100, 100, 100,0.7);">
+  <div class="flex flex-column align-items-center gap-5 p-5 experience-card">
     <app-experience-item
       *ngFor="let experienceItem of experienceItems"
       [collapsed]="experienceItem.collapsed"

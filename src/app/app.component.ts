@@ -5,11 +5,12 @@ import { PersonalInfoComponent } from './components/personal-info/personal-info.
 import { ExperienceSectionComponent } from './components/experience-section/experience-section.component';
 import { OtherProjectsSectionComponent } from './components/other-projects-section/other-projects-section.component';
 import { ParallaxDirective } from './directives/parallax.directive';
+import { EducationSectionComponent } from './components/education-section/education-section.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, RouterOutlet, PersonalInfoComponent, ExperienceSectionComponent, OtherProjectsSectionComponent, ParallaxDirective],
+  imports: [CommonModule, RouterOutlet, PersonalInfoComponent, ExperienceSectionComponent, OtherProjectsSectionComponent, ParallaxDirective, EducationSectionComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })

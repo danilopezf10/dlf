@@ -1,13 +1,13 @@
 <p-panel 
   #expandablePanel 
-  styleClass="experience-panel cursor-pointer" 
+  styleClass="experience-panel-2 cursor-pointer" 
   [toggleable]="true" 
   [collapsed]="collapsed ?? true" 
   (click)="!companyUrlHovered ? expandablePanel.toggle($event) : null"
 > 
   <ng-template pTemplate="header">
     <div class="flex flex-column flex-1">
-      <div class="flex gap-3 title">
+      <div class="flex gap-3 title justify-content-between">
         <p class="text-primary-600 text-lg mb-0"> 
           {{title.toUpperCase()}} 
           <span *ngIf="company" class="font-light text-primary-700">
