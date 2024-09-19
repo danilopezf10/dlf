@@ -8,22 +8,22 @@
   <ng-template pTemplate="header">
     <div class="flex flex-column flex-1">
       <div class="flex gap-3 title justify-content-between">
-        <p class="text-primary-600 text-lg mb-0"> 
+        <p class="text-indigo-500 text-lg mb-0"> 
           {{title.toUpperCase()}} 
-          <span *ngIf="company" class="font-light text-primary-700">
+          <span *ngIf="company" class="font-light text-indigo-700">
             AT 
             <a 
               href="{{url}}" 
               target="_blank" 
               (mouseenter)="companyUrlHovered=true" 
               (mouseleave)="companyUrlHovered=false"
-              class="text-primary-900 hover:text-cyan-500 "
+              class="text-indigo-700 hover:text-cyan-500 "
             >
               {{company.toUpperCase()}} 
             </a>
           </span>
         </p>
-        <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--primary-700)'">
+        <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--indigo-500)'">
           <i [class]="' ' + (expandablePanel.collapsed ? 'pi pi-chevron-down' : '')"></i> 
         </div>
       </div>
