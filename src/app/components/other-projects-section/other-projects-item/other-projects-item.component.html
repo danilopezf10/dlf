@@ -1,23 +1,48 @@
-<div class="project-card xl:flex-1">
-  <div class="flex justify-content-between">
-    <div class="flex flex-column">
-      <p class="text-primary-600 text-lg mb-0">{{title}}
-        <span class="font-light text-primary-700">
-          at 
-          <a 
-            href="https://akkodis.com" 
-            target="_blank"
-            class="text-primary-700 hover:text-pink-500 transition-duration-300"
-            style="text-decoration: none;"
-          >
-            {{company}}
-          </a>
-        </span>
-      </p>
-      <p class="text-500 flex align-items-center gap-2 mt-3"><i class="pi pi-map-marker"></i>{{location}}</p>
+<p-panel 
+  #expandablePanel 
+  styleClass="project-panel cursor-pointer" 
+  [toggleable]="true" 
+  (click)="!companyUrlHovered ? expandablePanel.toggle($event) : null"
+  [collapsed]="true"
+> 
+  <ng-template pTemplate="header">
+    <div class="flex flex-column align-items-center w-full pb-3">
+      <div class="flex flex-column text-center align-items-center w-full" style="min-height: 7rem;">
+        <!-- TITLE -->
+        <p class="text-primary-600 text-lg mb-0"> 
+          {{title}} 
+          <span *ngIf="company" class="font-light text-primary-700">
+            at
+            <a 
+              href="{{url}}" 
+              target="_blank" 
+              (mouseenter)="companyUrlHovered=true" 
+              (mouseleave)="companyUrlHovered=false"
+              class="text-primary-900 hover:text-cyan-500 "
+            >
+              {{company}} 
+            </a>
+          </span>
+        </p>
+        <!-- LOCATION AND DATE -->
+        <p class="text-600 flex flex-wrap align-items-center gap-2 mt-2">
+          <span>
+            <!-- <i class="pi pi-map-marker mr-1 sm:mr-2"></i> -->
+            {{location}}</span> <span class="hidden md:flex text-400">|</span> <span>{{date}}</span>
+        </p>
+      </div>
+      <!-- EXPAND ICON -->
+      <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--surface-200)'">
+        <i [class]="'text-xl ' + (expandablePanel.collapsed ? 'pi pi-plus' : '')"></i> 
+      </div>
+    </div>
+  </ng-template>
+  <div class="flex flex-column justify-content-between h-full">
+    <p #theDescription class="text-700 text-justify">
+      {{description}}
+    </p>
+    <div class="flex justify-content-center transition-duration-300'">    <!-- [class]="expandablePanel.collapsed ? 'text-100' : 'text-200' -->
+      <i [class]="'pi pi-chevron-up'"></i>
     </div>
   </div>
-  <div class="text-700 text-justify">
-    {{description}}
-  </div>
-</div>
+</p-panel>
