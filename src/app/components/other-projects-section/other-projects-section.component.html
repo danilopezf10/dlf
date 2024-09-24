@@ -1,8 +1,17 @@
 <div class="flex flex-column align-items-center gap-7">
-  <span #title class="text-5xl gradient-bg font-light opacity-0 animation-duration-1000">OTHER PROJECTS</span>
+  <span #title class="text-5xl gradient-bg font-light opacity-0 animation-duration-1000 text-white">OTHER PROJECTS</span>
 
-  <div #cards class="flex gap-5 flex-wrap opacity-0 animation-duration-1000">
-    <div class="project-card xl:flex-1">
+  <div #cards class="flex gap-5 flex-wrap justify-content-center opacity-0 animation-duration-1000">
+    <div *ngFor="let project of otherProjects"class="md:w-5">
+      <app-other-projects-item
+        [title]="project.title"
+        [company]="project.company"
+        [location]="project.location"
+        [description]="project.description"
+      >
+      </app-other-projects-item>
+    </div>
+    <!-- <div class="project-card xl:flex-1">
       <div class="flex justify-content-between">
         <div class="flex flex-column">
           <p class="text-primary-600 text-lg mb-0">International Graduate Consultant
@@ -27,9 +36,9 @@
         unemployment until new projects were available, I took 
         this time to learn new technologies and improve my 
         French skills.</p>
-    </div>
+    </div> -->
     
-    <div class="project-card xl:flex-1">
+    <!-- <div class="project-card xl:flex-1">
       <div class="flex justify-content-between">
         <div class="flex flex-column">
           <p class="text-primary-600 text-lg mb-0">Final thesis - Android App for Sharing Musical Resources </p>
@@ -66,7 +75,7 @@
         unemployment until new projects were available, I took 
         this time to learn new technologies and improve my 
         French skills.</p>
-    </div>
+    </div> -->
 
   </div>
 </div>
