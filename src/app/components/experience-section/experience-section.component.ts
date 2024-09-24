@@ -1,6 +1,7 @@
 import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExperienceItemComponent } from './experience-item/experience-item.component'
+// import { ScrollPanelModule } from 'primeng/scrollpanel';
 
 @Component({
   selector: 'app-experience-section',
@@ -9,7 +10,8 @@ import { ExperienceItemComponent } from './experience-item/experience-item.compo
   standalone: true,
   imports: [
     CommonModule,
-    ExperienceItemComponent
+    ExperienceItemComponent,
+    // ScrollPanelModule
   ],
 })
 export class ExperienceSectionComponent implements OnInit {
