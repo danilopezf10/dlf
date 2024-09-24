@@ -25,7 +25,7 @@
           </span>
         </p>
         <!-- LOCATION AND DATE -->
-        <p class="text-600 flex flex-wrap align-items-center gap-2 mt-2">
+        <p class="text-600 flex flex-wrap align-items-center justify-content-center gap-2 mt-2">
           <span>
             <!-- <i class="pi pi-map-marker mr-1 sm:mr-2"></i> -->
             {{location}}</span> <span class="hidden md:flex text-400">|</span> <span>{{date}}</span>
@@ -33,7 +33,7 @@
       </div>
       <!-- EXPAND ICON -->
       <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--surface-200)'">
-        <i [class]="'text-xl ' + (expandablePanel.collapsed ? 'pi pi-plus' : '')"></i> 
+        <i [class]="' ' + (expandablePanel.collapsed ? 'pi pi-plus' : '')"></i> 
       </div>
     </div>
   </ng-template>
