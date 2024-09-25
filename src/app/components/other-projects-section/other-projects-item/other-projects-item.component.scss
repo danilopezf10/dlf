@@ -21,7 +21,7 @@
     border: 1px solid rgb(100, 100, 100,0.3);
     // border-color: var(--pink-700);
 
-    background: color-mix(in srgb, var(--surface-100) 25%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
+    background: color-mix(in srgb, var(--surface-100) 50%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
     box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
@@ -29,12 +29,12 @@
     &:hover{
       transition-duration: 500ms;
       transition-property: border;
-      border-color: var(--pink-700);
+      border-color: var(--pink-600);
       // border: 1px solid var(--primary-800);
     //   border-image: linear-gradient(to bottom, var(--primary-600) 30%, var(--pink-900) 120%) 1;
 
       .pi-plus{
-        color: var(--pink-800) !important;
+        color: var(--pink-600) !important;
         transition-duration: 600ms;
       }
       .pi-chevron-up {

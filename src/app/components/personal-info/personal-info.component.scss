@@ -4,7 +4,14 @@ img {
 }
 
 .text-gradient {
-    background: -webkit-linear-gradient(60deg, var(--primary-600) 30%, var(--pink-600) 90%);
+    background: -webkit-linear-gradient(60deg, var(--primary-400) -20%, var(--pink-600) 90%); //-webkit-linear-gradient(60deg, var(--primary-500) 0%, var(--pink-600) 90%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
+}
+
+.gradient-bg {
+    background: linear-gradient(to right, var(--primary-600) 0%, var(--pink-600) 90%) ;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    color: black;
 }
