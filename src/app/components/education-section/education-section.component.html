@@ -32,5 +32,15 @@
     </p-timeline> -->
 
   <!-- </div> -->
-  <app-timeline [events]="events"></app-timeline>
+   <!-- <div class="relative w-full">   -->
+       <!-- border-1 border-round border-400 py-3 -->
+     <!-- <div class="absolute w-full top-0 timeline-container border-1" style="height: 95%;"></div> -->
+    <div class="w-full overflow-x-scroll timeline-container px-5 flex xl:justify-content-center">
+      <app-timeline [events]="events"></app-timeline>
+    </div>
+   
+   <!-- </div> -->
+   <!-- <div class="border-1 px-5 w-full border-1">
+
+   </div> -->
 </div>

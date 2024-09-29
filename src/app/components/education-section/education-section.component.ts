@@ -26,6 +26,12 @@ export class EducationSectionComponent {
 //     { status: 'Delivered', date: '16/10/2020', icon: 'pi pi-check', color: 'var(--pink-600)' }
 // ];
   events = [
+    // { 
+    //   date: '2011 & 2012', 
+    //   location: 'Tampa Bay & Detroit, USA', 
+    //   title: 'Barling School', 
+    //   description: 'One month-long language immersion courses in Tampa Bay, Florida and Detroit, Michigan.'
+    // },
     { 
       date: '2011 & 2012', 
       location: 'Tampa Bay & Detroit, USA', 

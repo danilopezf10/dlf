@@ -1,7 +1,7 @@
 .event-card {
     border-radius: 16px; 
     border: 1px solid rgb(100, 100, 100,0.1);
-    background: color-mix(in srgb, var(--surface-800) 55%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
+    background: color-mix(in srgb, var(--surface-800) 75%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
