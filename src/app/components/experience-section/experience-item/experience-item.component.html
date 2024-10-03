@@ -8,9 +8,9 @@
   <ng-template pTemplate="header">
     <div class="flex flex-column flex-1">
       <div class="flex gap-3 title justify-content-between">
-        <p class="text-700 text-lg mb-0"> 
+        <p class="text-600 text-lg mb-0"> 
           {{title}} 
-          <span *ngIf="company" class="font-light text-600">
+          <span *ngIf="company" class="font-light text-500">
             at
             <a 
               href="{{url}}" 
@@ -23,17 +23,17 @@
             </a>
           </span>
         </p>
-        <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--surface-700)'">
+        <div class="flex align-items-end pb-1 expand-icon" [style]="!expandablePanel.collapsed ? 'color: transparent' : 'color: var(--surface-500)'">
           <i [class]="' ' + (expandablePanel.collapsed ? 'pi pi-chevron-down' : '')"></i> 
         </div>
       </div>
 
-      <p class="text-400 flex flex-wrap align-items-center gap-2  h-full align-content-end">
+      <p class="text-300 flex flex-wrap align-items-center gap-2  h-full align-content-end">
         <span><i class="pi pi-map-marker mr-1 sm:mr-2"></i>{{location}}</span> <span class="hidden md:flex text-200">|</span> <span>{{date}}</span>
       </p>
     </div>
   </ng-template>
-  <p #theDescription class="text-600 text-justify">
+  <p #theDescription class="text-400 text-justify">
     {{description}}
   </p>
   <div class="flex justify-content-center transition-duration-300'">    <!-- [class]="expandablePanel.collapsed ? 'text-100' : 'text-200' -->
