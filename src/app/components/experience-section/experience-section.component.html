@@ -2,8 +2,8 @@
   <span #sectionTitle class="text-5xl font-light opacity-0 animation-duration-1000 text-700" style="letter-spacing: .25rem;">EXPERIENCE</span>   <!-- style="letter-spacing: .2rem;" -->
   <!-- <span class="text-600 text-6xl font-light">EXPERIENCE</span> -->
   <!-- <hr class="hr-gradient" /> -->
-  <div #card class="flex p-7 experience-card opacity-0 animation-duration-1000 overflow-hidden">
-    <div class="flex flex-column gap-5 experience-items px-3">
+  <div #card class="flex px-7 py-6 experience-card opacity-0 animation-duration-1000 overflow-hidden">
+    <div class="flex flex-column gap-5 experience-items px-3 pb-5">
       <app-experience-item
         *ngFor="let experienceItem of experienceItems"
         [collapsed]="experienceItem.collapsed"
