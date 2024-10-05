@@ -17,7 +17,7 @@ import { TimelineComponent } from './timeline/timeline.component'
   ],
 })
 export class EducationSectionComponent {
-  @ViewChildren('title, subtitle, cards') els!: QueryList<ElementRef>;
+  @ViewChildren('title, subtitle, timeline') els!: QueryList<ElementRef>;
 
 //   events = [
 //     { status: 'Ordered', date: '15/10/2020', icon: 'pi pi-shopping-cart', color: 'var(--pink-600)', image: 'game-controller.jpg' },

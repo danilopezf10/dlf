@@ -1,14 +1,14 @@
 <div class="flex gap-5 pb-5">
   <div *ngFor="let event of events" class="flex flex-column gap-4 align-items-center">
     <div class="relative flex flex-column align-items-center w-full gap-3">
-      <span class="text-100">{{event.date}}</span>
-      <div class="w-2rem h-2rem bg-pink-600" style="border-radius: 100%;"></div>
-      <div class="absolute bg-pink-600" style="bottom: 0.95rem; height: 2px; width: 115%;"></div>
+      <span class="text-600">{{event.date}}</span>
+      <div class="bg-gradient z-1" style="border-radius: 100%; width: 1.5rem; height: 1.5rem;"></div>
+      <div class="absolute bg-gradient-2" style="bottom: 0.75rem; height: 2px; width: 115%;"></div>
     </div>
     <div class="event-card flex flex-column gap-3 align-items-center p-4 w-16rem h-15rem">
-      <span class="text-center text-pink-600 h-2rem text-lg">{{event.title}}</span>
-      <span class="text-300 text-center">{{event.location}}</span>
-      <span class="text-center mt-2 text-100">{{event.description}}</span>
+      <span class="text-center text-600 h-2rem text-lg">{{event.title}}</span>
+      <span class="text-100 text-center">{{event.location}}</span>
+      <span class="text-center mt-2 text-400">{{event.description}}</span>
     </div>
   </div>
 </div>
