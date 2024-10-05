@@ -13,7 +13,7 @@ import { OtherProjectsItemComponent } from './other-projects-item/other-projects
   ],
 })
 export class OtherProjectsSectionComponent {
-  @ViewChildren('title, cards') els!: QueryList<ElementRef>;
+  @ViewChildren('title, subtitle, cards') els!: QueryList<ElementRef>;
 
   otherProjects = [
     {
@@ -21,6 +21,7 @@ export class OtherProjectsSectionComponent {
       location: "Remote",
       date: "September 2024",
       description: "This same website you are looking at right now! Built usig Angular, Primeflex and Primeng, hosted in Firebase. Used Sourcetree for code management.",
+      //more description: I thought an interactive/web CV would be more interesting than your classical PDF
       // url: "https://www.a2system.net/es/",
     },
     {

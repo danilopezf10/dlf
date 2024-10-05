@@ -1,6 +1,8 @@
 <div class="flex flex-column align-items-center gap-7">
-  <span #title class="text-5xl gradient-bg font-light opacity-0 animation-duration-1000 text-800">OTHER PROJECTS</span>
-
+  <div class="flex flex-column gap-4 align-items-center justify-content-center">
+    <span #title class="text-6xl font-light opacity-0 animation-duration-1000 text-700">Other projects</span>   <!-- style="letter-spacing: .2rem;" -->
+    <span #subtitle class="text-center text-3xl text-500 font-light opacity-0 animation-duration-1000">Side projects and other gigs worth mentioning.</span>
+  </div>
   <div #cards class="flex gap-5 flex-wrap justify-content-center opacity-0 animation-duration-1000">
     <div *ngFor="let project of otherProjects"class="md:w-5">
       <app-other-projects-item

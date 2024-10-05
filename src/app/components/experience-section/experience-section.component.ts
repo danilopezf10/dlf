@@ -15,7 +15,7 @@ import { ExperienceItemComponent } from './experience-item/experience-item.compo
   ],
 })
 export class ExperienceSectionComponent implements OnInit {
-  @ViewChildren('sectionTitle, card') els!: QueryList<ElementRef>;
+  @ViewChildren('title, subtitle, card') els!: QueryList<ElementRef>;
 
   experienceItems = [
     {
