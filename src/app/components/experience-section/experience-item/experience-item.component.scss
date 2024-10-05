@@ -179,9 +179,9 @@
 
     border-radius: 16px; 
     // background-color: rgb(0,0,0,0.9); 
-    border: 1px solid rgb(100, 100, 100,0.3);
+    border: 1px solid rgb(10, 10, 10,0.2);
 
-    background: color-mix(in srgb, rgb(50,50,50) 100%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
+    background: color-mix(in srgb, black 80%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
     box-shadow: 0px 3px 7px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);

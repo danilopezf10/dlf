@@ -2,21 +2,19 @@
   <span #sectionTitle class="text-5xl font-light opacity-0 animation-duration-1000 text-700" style="letter-spacing: .25rem;">EXPERIENCE</span>   <!-- style="letter-spacing: .2rem;" -->
   <!-- <span class="text-600 text-6xl font-light">EXPERIENCE</span> -->
   <!-- <hr class="hr-gradient" /> -->
-  <div #card class="flex px-7 py-6 experience-card opacity-0 animation-duration-1000 overflow-hidden">
-    <div class="flex flex-column gap-5 experience-items px-3 pb-5">
-      <app-experience-item
-        *ngFor="let experienceItem of experienceItems"
-        [collapsed]="experienceItem.collapsed"
-        [title]="experienceItem.title"
-        [company]="experienceItem.company"
-        [location]="experienceItem.location"
-        [date]="experienceItem.date"
-        [description]="experienceItem.description"
-        [primaryTechs]="experienceItem.primaryTechs"
-        [secondaryTechs]="experienceItem.secondaryTechs"
-        [otherTechs]="experienceItem.otherTechs"
-        [url]="experienceItem.url"
-      ></app-experience-item>
-    </div>
+  <div #card class="flex flex-column align-items-center gap-5 p-5 experience-card opacity-0 animation-duration-1000">
+    <app-experience-item
+      *ngFor="let experienceItem of experienceItems"
+      [collapsed]="experienceItem.collapsed"
+      [title]="experienceItem.title"
+      [company]="experienceItem.company"
+      [location]="experienceItem.location"
+      [date]="experienceItem.date"
+      [description]="experienceItem.description"
+      [primaryTechs]="experienceItem.primaryTechs"
+      [secondaryTechs]="experienceItem.secondaryTechs"
+      [otherTechs]="experienceItem.otherTechs"
+      [url]="experienceItem.url"
+    ></app-experience-item>
   </div>
 </div>
