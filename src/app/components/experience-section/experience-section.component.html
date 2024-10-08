@@ -1,12 +1,12 @@
 <div class="animation-duration-1000 animation-ease-in flex flex-column align-items-center gap-7">
   <div class="flex flex-column gap-4 align-items-center justify-content-center">
     <span #title class="text-6xl font-light opacity-0 animation-duration-1000 text-700">Experience</span>   <!-- style="letter-spacing: .2rem;" -->
-    <span #subtitle class="text-center text-3xl text-500 font-light opacity-0 animation-duration-1000">All jobs I've worked, from the back to the front, from small to large teams.</span>
+    <span #subtitle class="text-center text-2xl sm:text-3xl text-500 font-light opacity-0 animation-duration-1000">All jobs I've worked, from the back to the front, from small to large teams.</span>
   </div>
 
   <!-- <span class="text-600 text-6xl font-light">EXPERIENCE</span> -->
   <!-- <hr class="hr-gradient" /> -->
-  <div #card class="flex flex-column align-items-center gap-5 p-5 experience-card opacity-0 animation-duration-1000">
+  <div #card class="flex flex-column align-items-center gap-4 sm:gap-5 p-3 sm:p-5 experience-card opacity-0 animation-duration-1000">
     <app-experience-item
       *ngFor="let experienceItem of experienceItems"
       [collapsed]="experienceItem.collapsed"
