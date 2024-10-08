@@ -1,4 +1,4 @@
-import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChild, ViewChildren } from '@angular/core';
 import { TimelineModule } from 'primeng/timeline';
 import { CardModule } from 'primeng/card';
 import { CommonModule } from '@angular/common';
@@ -18,6 +18,7 @@ import { TimelineComponent } from './timeline/timeline.component'
 })
 export class EducationSectionComponent {
   @ViewChildren('title, subtitle, timeline') els!: QueryList<ElementRef>;
+  @ViewChild('timeline') timeline: ElementRef | undefined;
 
 //   events = [
 //     { status: 'Ordered', date: '15/10/2020', icon: 'pi pi-shopping-cart', color: 'var(--pink-600)', image: 'game-controller.jpg' },
@@ -67,6 +68,13 @@ export class EducationSectionComponent {
         if (entry.isIntersecting) {
           entry.target.classList.remove('opacity-0');
           entry.target.classList.add('fadein');
+
+          if (entry.target.id == 'timeline') {
+            setTimeout(() => {
+              // Auto scroll timeline to the right after 1s
+              entry.target.scrollLeft = entry.target.scrollWidth;
+            }, 1000);
+          }
         }
       });
     },
