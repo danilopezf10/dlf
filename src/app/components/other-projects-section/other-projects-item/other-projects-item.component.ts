@@ -1,5 +1,5 @@
-import { Component, Input } from '@angular/core';
-import { PanelModule } from 'primeng/panel';
+import { Component, Input, ViewChild } from '@angular/core';
+import { Panel, PanelModule } from 'primeng/panel';
 import { CommonModule } from '@angular/common';
 
 @Component({
@@ -20,8 +20,18 @@ export class OtherProjectsItemComponent {
   @Input() description: string = "";
   @Input() url: string | undefined;
 
+  @ViewChild('expandablePanel') expandablePanel: Panel | undefined;
+
+  collapsed = true;
   companyUrlHovered = false;
 
   constructor() { }
 
+  isCollapsed() {
+    return this.expandablePanel?.collapsed;
+  }
+
+  collapse() {
+    this.collapsed = true
+  }
 }

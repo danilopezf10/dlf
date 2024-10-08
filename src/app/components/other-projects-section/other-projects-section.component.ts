@@ -1,6 +1,7 @@
 import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { OtherProjectsItemComponent } from './other-projects-item/other-projects-item.component';
+import { CarouselModule } from 'primeng/carousel';
 
 @Component({
   selector: 'app-other-projects-section',
@@ -10,10 +11,12 @@ import { OtherProjectsItemComponent } from './other-projects-item/other-projects
   imports: [
     OtherProjectsItemComponent,
     CommonModule,
+    CarouselModule,
   ],
 })
 export class OtherProjectsSectionComponent {
-  @ViewChildren('title, subtitle, cards') els!: QueryList<ElementRef>;
+  @ViewChildren('title, subtitle, cards, carousel') els!: QueryList<ElementRef>;
+  @ViewChildren(OtherProjectsItemComponent) otherProjectsItems: OtherProjectsItemComponent[] | undefined;
 
   otherProjects = [
     {
@@ -69,4 +72,11 @@ export class OtherProjectsSectionComponent {
     });
   }
 
+  onCarouselClick(){
+    this.otherProjectsItems?.forEach(item => {
+      if (!item.isCollapsed()) {
+        item.collapse();
+      }
+    });
+  }
 }

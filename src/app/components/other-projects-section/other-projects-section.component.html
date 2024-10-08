@@ -3,7 +3,32 @@
     <span #title class="text-6xl font-light opacity-0 animation-duration-1000 text-700">Other projects</span>   <!-- style="letter-spacing: .2rem;" -->
     <span #subtitle class="text-center text-2xl sm:text-3xl text-500 font-light opacity-0 animation-duration-1000">Side projects and other gigs worth mentioning.</span>
   </div>
-  <div #cards class="flex gap-5 flex-wrap justify-content-center opacity-0 animation-duration-1000">
+
+  <!-- Show carousel on small screens -->
+  <div #carousel class="w-full opacity-0 animation-duration-1000 md:hidden">
+    <p-carousel 
+      [value]="otherProjects" 
+      [numVisible]="1" 
+      [numScroll]="1" 
+      [circular]="true" 
+      (onPage)="onCarouselClick()"
+    >
+      <ng-template let-project pTemplate="item">
+        <app-other-projects-item
+          #item
+          [title]="project.title"
+          [company]="project.company"
+          [location]="project.location"
+          [date]="project.date"
+          [description]="project.description"
+        >
+        </app-other-projects-item>
+      </ng-template>
+    </p-carousel>
+  </div>
+
+<!-- Show cards on large screens -->
+  <div #cards class="hidden md:flex gap-5 flex-wrap justify-content-center opacity-0 animation-duration-1000">
     <div *ngFor="let project of otherProjects"class="md:w-5">
       <app-other-projects-item
         [title]="project.title"

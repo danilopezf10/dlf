@@ -3,7 +3,7 @@
   styleClass="project-panel cursor-pointer" 
   [toggleable]="true" 
   (click)="!companyUrlHovered ? expandablePanel.toggle($event) : null"
-  [collapsed]="true"
+  [(collapsed)]="collapsed"
 > 
   <!-- EXPAND ICON -->
   <div class="absolute flex align-items-end pb-1 expand-icon" [style]="'bottom: 2rem; left: 47%;' + (!expandablePanel.collapsed ? 'color: transparent;' : 'color: var(--surface-300);')">
@@ -34,7 +34,7 @@
         <p class="text-400 flex flex-wrap align-items-center justify-content-center gap-2 mt-2">
           <span>
             <!-- <i class="pi pi-map-marker mr-1 sm:mr-2"></i> -->
-            {{location}}</span> <span class="hidden md:flex text-200 font-light">|</span> <span>{{date}}</span>
+            {{location}}</span> <span class="text-200 font-light">|</span> <span>{{date}}</span>
         </p>
       <!-- </div> -->
     </div>
