@@ -186,21 +186,14 @@
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
 
-    &:hover{
-      transition-duration: 500ms;
-      transition-property: border;
+    .expand-icon {
+      padding-top: 1.3rem;
+    }
 
-      .pi-chevron-down{
-        color: var(--primary-800) !important;
-        transition-duration: 600ms;
-      }
+    &:hover{
       .pi-chevron-up {
         color: var(--surface-200);
         transition-duration: 300ms;
-      }
-      .expand-icon {
-        transition-duration: 200ms;
-        padding-bottom: 0.15rem !important;
       }
       //&:not(.p-panel-expanded) {
         .title *{
@@ -234,9 +227,6 @@
       @media (max-width: 576px) {
         color: var(--surface-200);
       }
-    }
-    .expand-icon {
-      bottom: 0.5rem;
     }
     .p-panel-header {
       background-color: transparent;
