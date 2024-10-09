@@ -1,0 +1,21 @@
+img {
+  filter: grayscale(70%);
+  border-top-left-radius: 16px;
+  border-bottom-left-radius: 16px;
+  border-top-right-radius: 6px;
+  border-bottom-right-radius: 6px;
+
+  mask-image: linear-gradient(to right, transparent 0%, black 300px);
+  
+}
+
+.image-wrapper {
+  // mask-image: linear-gradient(to right, transparent 0%, black 300px);
+  // padding-top: 0.1rem;
+  // padding-bottom: 0;
+  // padding-right: 0.15rem;
+  border-radius: 6px;
+  // background: linear-gradient(to right, var(--primary-700) 0%, var(--pink-500) 100%);
+  background-color: var(--surface-100);
+  border: 2px solid var(--pink-500);
+}
