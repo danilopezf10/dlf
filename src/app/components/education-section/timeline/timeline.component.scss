@@ -8,12 +8,26 @@
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
     -webkit-backdrop-filter: blur(6.6px);
+    // box-shadow: 0px 0px 10px 0px var(--orange-500);
 }
 
 .bg-gradient {
     background: radial-gradient(var(--pink-600) 0%, var(--primary-700) 150%) ;
+    box-shadow: 0px 0px 20px 7px var(--pink-700);
 }
 
 .bg-gradient-2 {
-    background: radial-gradient(var(--primary-600) 0%, var(--pink-700) 100%) ;
+    background: radial-gradient(var(--pink-700) 0%, var(--primary-600) 100%) ;
 }
+
+//glowing orbs
+
+// .bg-gradient {
+//     background: radial-gradient(var(--pink-600) 0%, var(--pink-700) 150%) ;
+//     box-shadow: 0px 0px 20px 7px var(--pink-700);
+// }
+
+// .bg-gradient-2 {
+//     background: radial-gradient(var(--pink-700) 0%, var(--pink-700) 100%);
+//     // background: radial-gradient(var(--primary-600) 0%, var(--pink-700) 100%) ;
+// }
