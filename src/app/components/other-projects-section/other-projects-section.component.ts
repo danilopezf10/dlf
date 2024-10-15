@@ -23,7 +23,7 @@ export class OtherProjectsSectionComponent {
       title: "DLF website",
       location: "Remote",
       date: "September 2024",
-      description: "This same website you are looking at right now! Built usig Angular, Primeflex and Primeng, hosted in Firebase. Used Sourcetree for code management.",
+      description: "This same website you are looking at right now! Built usig Angular, Primeflex and Primeng, hosted in Firebase. Used Sourcetree for code management. Bear in mind it is work in progress, more interactivity, features and info incoming.",
       //more description: I thought an interactive/web CV would be more interesting than your classical PDF
       // url: "https://www.a2system.net/es/",
     },

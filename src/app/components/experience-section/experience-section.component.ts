@@ -1,4 +1,4 @@
-import { Component, ElementRef, OnInit, QueryList, ViewChildren } from '@angular/core';
+import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { ExperienceItemComponent } from './experience-item/experience-item.component'
 // import { ScrollPanelModule } from 'primeng/scrollpanel';
@@ -14,7 +14,7 @@ import { ExperienceItemComponent } from './experience-item/experience-item.compo
     // ScrollPanelModule
   ],
 })
-export class ExperienceSectionComponent implements OnInit {
+export class ExperienceSectionComponent {
   @ViewChildren('title, subtitle, card') els!: QueryList<ElementRef>;
 
   experienceItems = [
@@ -87,9 +87,6 @@ export class ExperienceSectionComponent implements OnInit {
   ];
 
   constructor() { }
-
-  ngOnInit() {
-  }
 
   ngAfterViewInit(): void {
     const observer = new IntersectionObserver((entries) => {

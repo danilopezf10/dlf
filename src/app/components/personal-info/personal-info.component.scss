@@ -15,3 +15,10 @@ img {
     padding-right: 1rem;
     color: black;
 }
+
+.button-enabled:hover {
+    box-shadow: 0px 0px 20px 5px var(--primary-700);
+    border-radius: 50%;
+    transition-property: box-shadow;
+    transition-duration: 300ms;
+}
