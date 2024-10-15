@@ -28,13 +28,15 @@
 
 .round-img-wrapper {
   position: absolute;
-  width: 21rem;
-  height: 21rem;
   left: 50%;
   margin-left: -10.5rem;
   border-radius: 100%;
   background-color: var(--pink-700);
   box-shadow: 0px 0px 40px 20px var(--pink-700);
+
+  @media(max-width: 575px) {
+    margin-left: -9rem;
+  }
 }
 
 .left-column, .right-column {

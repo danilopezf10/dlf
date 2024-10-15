@@ -10,7 +10,7 @@ import { Component, ElementRef, QueryList, ViewChildren } from '@angular/core';
   ],
 })
 export class AboutmeSectionComponent {
-  @ViewChildren('sectionTitle, avatar, text') els!: QueryList<ElementRef>;
+  @ViewChildren('sectionTitle, avatar, textDesktop, textMobile') els!: QueryList<ElementRef>;
 
   constructor() { }
 

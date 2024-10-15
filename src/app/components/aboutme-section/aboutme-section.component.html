@@ -1,3 +1,33 @@
+<div class="animation-duration-1000 animation-ease-in flex flex-column align-items-center gap-7">
+  <span #sectionTitle class="text-6xl font-light animation-duration-1000 text-700 opacity-0 animation-duration-1000">About me</span>
+  <div>
+    <div #avatar class="round-img-wrapper flex align-items-center justify-content-center opacity-0 animation-duration-1000">
+      <img src="assets/aboutme-picture-transparent-square.png" alt="Daniel Lopez picture" class="w-18rem sm:w-21rem h-18rem sm:h-21rem round-img"> 
+    </div>
+    
+    <div #textDesktop class="text-600 text-2xl opacity-0 animation-duration-1000 hidden sm:block">
+      <div class="left-column">
+        <p>“It’s been amazing working with him! I whish I could just replace all my coworkers with copies of him”, “Great Software Engineer, better person.”, “He solves every problem so quickly! I could watch him solve problems all day”… no one ever said these, but this is what my past coworkers probably thought of me had you asked them.</p>
+        <p>I consider myself a <span class="text-pink-600">Software Engineer</span>. Not a frontend<span class="xl:hidden">{{' '}}</span>/<span class="xl:hidden">{{' '}}</span>backend<span class="xl:hidden">{{' '}}</span>/<span class="xl:hidden">{{' '}}</span>fullstack<span class="xl:hidden">{{' '}}</span>/<span class="xl:hidden">{{' '}}</span>whatever developer, but an Engineer. With time I’ve come to realize that what makes a good engineer is not how many tools or languages he/she masters, but his/her ability to solve problems, and that’s what I do and (more importantly) enjoy most.</p>
+        <p>I’m a curious and adventurous person, and so I started this career thinking of the many doors it could open and the many paths I could take, and the possibilities to always learn new stuff and travel the world.</p>
+      </div>
+      <div class="right-column">
+        <p>I started my career in the back as that was the focus of my university degree, covid struck when I had barely landed in France for work and so I took that time to learn more of the front, working voluntarily for Rescue App and as a freelance building websites. Then I worked for Kokopilot, studied Art History at University of Malaga for 1.5 years (I love art, philosophy, history!... but had to focus on my career and keep self-learning those subjects I love) and ended in A2Systems, sharpening my front-end skills and discovering a fondness for design as well.</p>
+        <p>I've always loved <span class="text-pink-600">creating</span>. I used to draw when I was a kid, then started making music, and now I entertain myself building webs like this. So if you need a beautiful software engineer to take care of your product, I might be your man :)</p>
+      </div>
+    </div>
+
+    <div #textMobile class="text-600 text-2xl opacity-0 animation-duration-1000 block sm:hidden text-justify" style="margin-top: 22rem;">
+      <p>“It’s been amazing working with him! I whish I could just replace all my coworkers with copies of him”, “Great Software Engineer, better person.”, “He solves every problem so quickly! I could watch him solve problems all day”… no one ever said these, but this is what my past coworkers probably thought of me had you asked them.</p>
+      <p>I consider myself a <span class="text-pink-600">Software Engineer</span>. Not a frontend<span class="xl:hidden">{{' '}}</span>/<span class="xl:hidden">{{' '}}</span>backend<span class="xl:hidden">{{' '}}</span>/<span class="xl:hidden">{{' '}}</span>fullstack<span class="xl:hidden">{{' '}}</span>/<span class="xl:hidden">{{' '}}</span>whatever developer, but an Engineer. With time I’ve come to realize that what makes a good engineer is not how many tools or languages he/she masters, but his/her ability to solve problems, and that’s what I do and (more importantly) enjoy most.</p>
+      <p>I’m a curious and adventurous person, and so I started this career thinking of the many doors it could open and the many paths I could take, and the possibilities to always learn new stuff and travel the world.</p>
+      <p>I started my career in the back as that was the focus of my university degree, covid struck when I had barely landed in France for work and so I took that time to learn more of the front, working voluntarily for Rescue App and as a freelance building websites. Then I worked for Kokopilot, studied Art History at University of Malaga for 1.5 years (I love art, philosophy, history!... but had to focus on my career and keep self-learning those subjects I love) and ended in A2Systems, sharpening my front-end skills and discovering a fondness for design as well.</p>
+      <p>I've always loved <span class="text-pink-600">creating</span>. I used to draw when I was a kid, then started making music, and now I entertain myself building webs like this. So if you need a beautiful software engineer to take care of your product, I might be your man :)</p>
+    </div>
+  </div>
+</div>
+
+
 <!-- <div class="animation-duration-1000 animation-ease-in flex flex-column align-items-center gap-7">
   <span #sectionTitle class="text-6xl font-light animation-duration-1000 text-700">About me</span>
   <div class="flex gap-8 w-full align-items-center">
@@ -15,34 +45,3 @@
   </div>
 
 </div> -->
-
-<div class="animation-duration-1000 animation-ease-in flex flex-column align-items-center gap-7">
-  <span #sectionTitle class="text-6xl font-light animation-duration-1000 text-700 opacity-0 animation-duration-1000">About me</span>
-  <div>
-    <div #avatar class="round-img-wrapper flex align-items-center justify-content-center opacity-0 animation-duration-1000">
-      <img src="assets/aboutme-picture-transparent-square.png" alt="Daniel Lopez picture" class="w-21rem h-21rem round-img"> 
-    </div>
-    
-    <!-- <div class="flex gap-8 w-full align-items-center"> -->
-      <!-- <div class="text-600 text-xl text-justify"> -->
-        <div #text class="text-600 text-2xl opacity-0 animation-duration-1000">
-          <div class="left-column">
-            <p>“It’s been amazing working with him! I whish I could just replace all my coworkers with copies of him”, “Great Software Engineer, better person.”, “He solves every problem so quickly! I could watch him solve problems all day”… no one ever said these, but this is what my past coworkers probably thought of me had you asked them.</p>
-  
-            <p>I consider myself a <span class="text-pink-600">Software Engineer</span>. Not a frontend/backend/fullstack/whatever developer, but an Engineer. With time I’ve come to realize that what makes a good engineer is not how many tools or languages he/she masters, but his/her ability to solve problems, and that’s what I do and (more importantly) enjoy most.</p>
-  
-            <p>I’m a curious and adventurous person, and so I started this career thinking of the many doors it could open and the many paths I could take, and the possibilities to always learn new stuff and travel the world.</p>
-          </div>
-          <div class="right-column">
-            <p>I started my career in the back as that was the focus of my university degree, covid struck when I had barely landed in France for work and so I took that time to learn more of the front, working voluntarily for Rescue App and as a freelance building websites. Then I worked for Kokopilot, studied Art History at University of Malaga for 1.5 years (I love art, philosophy, history!... but had to focus on my career and keep self-learning those subjects I love) and ended in A2Systems, sharpening my front-end skills and discovering a fondness for design as well.</p>
-            <p>I've always loved <span class="text-pink-600">creating</span>. I used to draw when I was a kid, then started making music, and now I entertain myself building webs like this. So if you need a beautiful software engineer to take care of your product, I might be your man :)</p>
-          </div>
-        </div>
-
-      <!-- </div> -->
-    <!-- </div> -->
-  </div>
-
-
-</div>
-
