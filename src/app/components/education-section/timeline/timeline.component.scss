@@ -3,7 +3,7 @@
     // border: 1px solid var(--pink-700);
     border-width: 1px;
     border-style: solid;
-    border-color: color-mix(in srgb, var(--surface-100) 100%, transparent);
+    border-color: color-mix(in srgb, var(--surface-100) 50%, transparent);
     background: color-mix(in srgb, rgba(30,30,30) 20%, transparent); //color-mix(in srgb, var(--surface-800) 75%, transparent);//var(--surface-100);//rgba(255, 255, 255, 0.85);
     box-shadow: 0px 3px 10px rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(6.6px);
@@ -12,12 +12,12 @@
 }
 
 .bg-gradient {
-    background: radial-gradient(var(--pink-600) 0%, var(--primary-700) 150%) ;
-    box-shadow: 0px 0px 20px 7px var(--pink-700);
+    background: radial-gradient(var(--pink-900) 0%, var(--pink-600) 150%) ;
+    box-shadow: 0px 0px 20px 5px var(--pink-700);
 }
 
 .bg-gradient-2 {
-    background: radial-gradient(var(--pink-700) 0%, var(--primary-600) 100%) ;
+    background: radial-gradient(var(--pink-900) 0%, var(--pink-500) 100%) ;
     box-shadow: 15px 0px 20px 3px var(--pink-700);
 }
 

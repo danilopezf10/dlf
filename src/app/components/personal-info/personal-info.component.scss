@@ -1,6 +1,7 @@
 img {
     border-top-left-radius: 5%;
     border-bottom-left-radius: 5%;
+    mask-image: linear-gradient(to right, black 0%, black 70%, transparent 100%);
 }
 
 .text-gradient {
@@ -17,8 +18,15 @@ img {
 }
 
 .button-enabled:hover {
-    box-shadow: 0px 0px 20px 5px var(--primary-700);
+    box-shadow: 0px 0px 20px 5px var(--pink-700);
     border-radius: 50%;
     transition-property: box-shadow;
     transition-duration: 300ms;
+}
+
+.main-wrapper {
+    // background: linear-gradient(to right, var(--pink-700) 0%, var(--pink-700) 30%, transparent 40%, transparent 100%);
+    // box-shadow: 0px 0px 40px 20px var(--pink-700);
+    padding: 1px;
+    border-radius: 10px;
 }

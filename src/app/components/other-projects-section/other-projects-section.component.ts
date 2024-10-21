@@ -37,7 +37,7 @@ export class OtherProjectsSectionComponent {
     },
     {
       title: "Final thesis - Android App for Sharing Musical Resources",
-      location: "University of Málaga – Málaga, Spain",
+      location: "Málaga, Spain",
       date: "March-June 2019",
       description: "Developed an Android app that lets the user generate a video from a song and share it in social media. Used Android Studio and Java.",
       // url: "https://www.a2system.net/es/",
