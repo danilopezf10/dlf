@@ -9,10 +9,14 @@
     </div>
     <span class="text-6xl sm:text-7xl text-pink-900 text-center fadein animation-duration-1000" style="-webkit-text-stroke: 2px var(--pink-700); text-shadow: 0 0 10px var(--pink-700), 0 0 10px var(--pink-700)">SOFTWARE ENGINEER</span>
     <div class="flex gap-4 fadein animation-duration-1000 mt-5 sm:mt-0">
-      <p-button styleClass="bg-pink-400 border-none" [size]="'large'" [rounded]="true" icon="pi pi-phone" [disabled]="true"></p-button>
-      <p-button styleClass="bg-pink-400 border-none" [size]="'large'" [rounded]="true" icon="pi pi-envelope" [disabled]="true"></p-button>
+      <a  href="tel:{{tel}}" target="_blank" class="button-enabled">
+        <p-button styleClass="bg-pink-700 hover:bg-pink-400 transition-duration-300 border-none" [size]="'large'" [rounded]="true" icon="pi pi-phone" [style]="{'color': 'rgb(10,10,10)'}"></p-button>
+      </a>
+      <a  href="mailto:{{email}}" target="_blank" class="button-enabled">
+        <p-button styleClass="bg-pink-700 hover:bg-pink-400 transition-duration-300 border-none" [size]="'large'" [rounded]="true" icon="pi pi-envelope" [style]="{'color': 'rgb(10,10,10)'}"></p-button>
+      </a>
       <a  href="https://www.linkedin.com/in/daniel-lopez-fernandez-b14a9512a/" target="_blank" class="button-enabled">
-        <p-button styleClass="bg-pink-500 hover:bg-pink-400 transition-duration-300 border-none" [size]="'large'" [rounded]="true" icon="pi pi-linkedin"></p-button>
+        <p-button styleClass="bg-pink-700 hover:bg-pink-400 transition-duration-300 border-none" [size]="'large'" [rounded]="true" icon="pi pi-linkedin" [style]="{'color': 'rgb(10,10,10)'}"></p-button>
       </a>
     </div>
   </div>

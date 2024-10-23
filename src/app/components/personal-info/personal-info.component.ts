@@ -11,6 +11,8 @@ import { ButtonModule } from 'primeng/button';
   ],
 })
 export class PersonalInfoComponent implements OnInit {
+  tel = "+34625064288";
+  email = "danilopezf10@gmail.com";
 
   constructor() { }
 
