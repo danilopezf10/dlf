@@ -1,5 +1,25 @@
-<div class="sections-wrapper">
-  <div class="section py-8">
+<div class="relative sections-wrapper">
+
+  <p-sidebar [(visible)]="sidebarVisible" styleClass="bg-black-alpha-90 border-none w-full sm:w-20rem">
+    <div class="flex flex-column gap-5 sm:gap-4 pl-4 pt-4 align-items-center sm:align-items-start">
+      <!-- <a href="#home" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Home</a> -->
+      <a href="#experience" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Experience</a>
+      <a href="#otherProjects" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Other projects</a>
+      <a href="#education" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Education</a>
+      <a href="#aboutme" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">About me</a>
+    </div>
+    <ng-template pTemplate="footer">
+      <div class="flex justify-content-center mb-8">
+        <a  href="" target="_blank" style="box-shadow: 0px 0px 20px 5px var(--pink-700); border-radius: 30%;">
+          <p-button [rounded]="true" label="Download CV" icon="pi pi-arrow-down" styleClass="bg-pink-600 hover:bg-pink-500 border-none"></p-button>
+        </a>
+      </div>
+    </ng-template>
+  </p-sidebar>
+  <!-- <p-button (onClick)="sidebarVisible = true" icon="pi pi-plus" styleClass="menu-button" class="menu-button" /> -->
+  <button pButton (click)="sidebarVisible = true" icon="pi pi-bars" style="background-color: transparent; z-index: 1;" class="border-none text-white sm:ml-5 sm:mt-5 fixed top-0" size="large"></button>
+
+  <div id="home" class="section py-8">
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
       <div class="star-layer" id="stars2"></div>
@@ -8,19 +28,19 @@
     <app-personal-info></app-personal-info>
   </div>
   <!-- <div class="blur-line"></div> -->
-  <div class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
+  <div id="experience" class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
     <div class="experience-bg" appParallax [ratio]="0.5"></div>
     <app-experience-section ></app-experience-section>
   </div>
-  <div class="section w-full" style="padding-top: 7rem; padding-bottom: 7rem;">
+  <div id="otherProjects" class="section w-full" style="padding-top: 7rem; padding-bottom: 7rem;">
     <!-- <div class="other-projects-bg" appParallax [ratio]="1" ></div>    --><!-- style="background: linear-gradient(to right, black 30%, var(--pink-600) 220%) ;" -->
     <app-other-projects-section></app-other-projects-section>
   </div>
-  <div class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
+  <div id="education" class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
     <div class="education-bg" appParallax [ratio]="0.7"></div>
     <app-education-section ></app-education-section>
   </div>
-  <div class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
+  <div id="aboutme" class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
     <!-- <div class="" appParallax [ratio]="0.3"></div> -->
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>

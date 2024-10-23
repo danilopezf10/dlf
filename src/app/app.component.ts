@@ -7,6 +7,8 @@ import { OtherProjectsSectionComponent } from './components/other-projects-secti
 import { ParallaxDirective } from './directives/parallax.directive';
 import { EducationSectionComponent } from './components/education-section/education-section.component';
 import { AboutmeSectionComponent } from './components/aboutme-section/aboutme-section.component';
+import { SidebarModule } from 'primeng/sidebar';
+import { ButtonModule } from 'primeng/button';
 
 @Component({
   selector: 'app-root',
@@ -20,10 +22,20 @@ import { AboutmeSectionComponent } from './components/aboutme-section/aboutme-se
     ParallaxDirective, 
     EducationSectionComponent,
     AboutmeSectionComponent,
+    SidebarModule,
+    ButtonModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
 })
 export class AppComponent {
   title = 'dlf';
+  sidebarVisible = false;
+
+  closeSidebar() {
+    setTimeout( () => {
+      this.sidebarVisible = false
+    }
+    , 100)
+  }
 }
