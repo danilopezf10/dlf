@@ -19,7 +19,7 @@
   <!-- <p-button (onClick)="sidebarVisible = true" icon="pi pi-plus" styleClass="menu-button" class="menu-button" /> -->
   <button pButton (click)="sidebarVisible = true" icon="pi pi-bars" style="background-color: transparent; z-index: 1;" class="border-none text-white sm:ml-5 sm:mt-5 fixed top-0" size="large"></button>
 
-  <div id="home" class="section py-8">
+  <div id="home" class="section pt-8">
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
       <div class="star-layer" id="stars2"></div>
@@ -28,19 +28,19 @@
     <app-personal-info></app-personal-info>
   </div>
   <!-- <div class="blur-line"></div> -->
-  <div id="experience" class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
+  <div id="experience" class="section">
     <div class="experience-bg" appParallax [ratio]="0.5"></div>
     <app-experience-section ></app-experience-section>
   </div>
-  <div id="otherProjects" class="section w-full" style="padding-top: 7rem; padding-bottom: 7rem;">
+  <div id="otherProjects" class="section" >
     <!-- <div class="other-projects-bg" appParallax [ratio]="1" ></div>    --><!-- style="background: linear-gradient(to right, black 30%, var(--pink-600) 220%) ;" -->
     <app-other-projects-section></app-other-projects-section>
   </div>
-  <div id="education" class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
+  <div id="education" class="section">
     <div class="education-bg" appParallax [ratio]="0.7"></div>
     <app-education-section ></app-education-section>
   </div>
-  <div id="aboutme" class="section pt-0 sm:pt-5" style="margin-top: 8rem; padding-bottom: 7rem;">
+  <div id="aboutme" class="section">
     <!-- <div class="" appParallax [ratio]="0.3"></div> -->
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
