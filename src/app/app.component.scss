@@ -27,6 +27,11 @@
     }
 }
 
+:host::ng-deep .sidebar {
+  background-color: black;
+  border-width: 0px;
+}
+
 .experience-bg{
     width: 100%;
     height: 100%;

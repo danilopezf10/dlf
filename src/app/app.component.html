@@ -1,6 +1,6 @@
 <div class="relative sections-wrapper">
 
-  <p-sidebar [(visible)]="sidebarVisible" styleClass="bg-black-alpha-90 border-none w-full sm:w-20rem">
+  <p-sidebar [(visible)]="sidebarVisible" styleClass="sidebar w-full sm:w-20rem">
     <div class="flex flex-column gap-5 sm:gap-4 pl-4 pt-4 align-items-center sm:align-items-start">
       <!-- <a href="#home" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Home</a> -->
       <a href="#experience" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Experience</a>
@@ -10,7 +10,7 @@
     </div>
     <ng-template pTemplate="footer">
       <div class="flex justify-content-center mb-8">
-        <a  href="" target="_blank" style="box-shadow: 0px 0px 20px 5px var(--pink-700); border-radius: 30%;">
+        <a  href="" target="_blank" style="box-shadow: 0px 0px 20px 5px var(--pink-700); border-radius: 30%;" class="bg-pink-900">
           <p-button [rounded]="true" label="Download CV" icon="pi pi-arrow-down" styleClass="bg-pink-600 hover:bg-pink-500 border-none"></p-button>
         </a>
       </div>
