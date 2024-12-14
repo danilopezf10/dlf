@@ -11,10 +11,16 @@ import { ButtonModule } from 'primeng/button';
   ],
 })
 export class PersonalInfoComponent implements OnInit {
+  encodedTel = "KzM0NjI1MDY0Mjg4";
+  tel = "";
+  encoedEmail = "ZGFuaWxvcGV6ZjEwQGdtYWlsLmNvbQ==";
+  email = "";
 
   constructor() { }
 
   ngOnInit() {
+    this.tel = atob(this.encodedTel);
+    this.email = atob(this.encoedEmail);
   }
 
 }
