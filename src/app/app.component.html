@@ -1,17 +1,17 @@
 <div class="relative sections-wrapper">
 
   <p-sidebar [(visible)]="sidebarVisible" styleClass="sidebar w-full sm:w-20rem">
-    <div class="flex flex-column gap-5 sm:gap-4 pl-4 pt-4 align-items-center sm:align-items-start">
+    <div class="flex flex-column gap-6 sm:gap-5 pl-4 pt-5 align-items-center sm:align-items-start">
       <!-- <a href="#home" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Home</a> -->
-      <a href="#experience" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Experience</a>
-      <a href="#otherProjects" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Other projects</a>
-      <a href="#education" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Education</a>
-      <a href="#aboutme" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">About me</a>
+      <a href="#experience" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">Experience</a>
+      <a href="#otherprojects" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">Other projects</a>
+      <a href="#education" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">Education</a>
+      <a href="#aboutme" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">About me</a>
     </div>
     <ng-template pTemplate="footer">
-      <div class="flex justify-content-center mb-8">
+      <div class="flex justify-content-center sm:justify-content-start mb-8 sm:ml-4">
         <a  href="" target="_blank" style="box-shadow: 0px 0px 20px 5px var(--pink-700); border-radius: 30%;" class="bg-pink-900">
-          <p-button [rounded]="true" label="Download CV" icon="pi pi-arrow-down" styleClass="bg-pink-600 hover:bg-pink-500 border-none"></p-button>
+          <p-button [rounded]="true" label="Download CV" icon="pi pi-arrow-down" styleClass="bg-pink-600 hover:bg-pink-500 border-none text-xl sm:text-base"></p-button>
         </a>
       </div>
     </ng-template>
@@ -32,7 +32,7 @@
     <div class="experience-bg" appParallax [ratio]="0.5"></div>
     <app-experience-section ></app-experience-section>
   </div>
-  <div id="otherProjects" class="section" >
+  <div id="otherprojects" class="section" >
     <!-- <div class="other-projects-bg" appParallax [ratio]="1" ></div>    --><!-- style="background: linear-gradient(to right, black 30%, var(--pink-600) 220%) ;" -->
     <app-other-projects-section></app-other-projects-section>
   </div>

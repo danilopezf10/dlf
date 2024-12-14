@@ -28,7 +28,7 @@
 }
 
 :host::ng-deep .sidebar {
-  background-color: black;
+  background: linear-gradient(to right, black 70%, var(--pink-900) 300%) ;
   border-width: 0px;
 }
 
