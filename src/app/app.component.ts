@@ -9,6 +9,7 @@ import { EducationSectionComponent } from './components/education-section/educat
 import { AboutmeSectionComponent } from './components/aboutme-section/aboutme-section.component';
 import { SidebarModule } from 'primeng/sidebar';
 import { ButtonModule } from 'primeng/button';
+import { ScrollTopModule } from 'primeng/scrolltop';
 
 @Component({
   selector: 'app-root',
@@ -24,6 +25,7 @@ import { ButtonModule } from 'primeng/button';
     AboutmeSectionComponent,
     SidebarModule,
     ButtonModule,
+    ScrollTopModule,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'

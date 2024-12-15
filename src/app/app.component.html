@@ -1,5 +1,9 @@
 <div class="relative sections-wrapper">
 
+  <!-- SCROLL TO TOP BUTTON -->
+  <p-scrollTop icon="pi pi-chevron-up" />
+
+  <!-- MENU -->
   <p-sidebar [(visible)]="sidebarVisible" styleClass="sidebar w-full sm:w-20rem">
     <div class="flex flex-column gap-6 sm:gap-5 sm:pl-4 pt-5 align-items-center sm:align-items-start">
       <!-- <a href="#home" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Home</a> -->
@@ -19,6 +23,7 @@
   <!-- <p-button (onClick)="sidebarVisible = true" icon="pi pi-plus" styleClass="menu-button" class="menu-button" /> -->
   <button pButton (click)="sidebarVisible = true" icon="pi pi-bars" style="background-color: transparent; z-index: 1;" class="border-none text-white sm:ml-5 sm:mt-5 fixed top-0" size="large"></button>
 
+  <!-- SECTIONS -->
   <div id="home" class="section sm:pt-8">
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
