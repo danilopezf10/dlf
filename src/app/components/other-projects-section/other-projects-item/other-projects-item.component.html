@@ -10,7 +10,7 @@
     <i [class]="' ' + (expandablePanel.collapsed ? 'pi pi-plus' : '')"></i> 
   </div>
   <ng-template pTemplate="header">
-    <div class="relative flex flex-column text-center align-items-center w-full pb-3">
+    <div class="relative flex flex-column text-center align-items-center justify-content-between h-full w-full">
       <!-- <div class="flex flex-column text-center align-items-center w-full" style="min-height: 7rem;"> -->
         <!-- TITLE -->
          <div class="title">
@@ -32,6 +32,7 @@
       </div>
         <!-- LOCATION AND DATE -->
         <p class="text-200 flex flex-wrap align-items-center justify-content-center gap-2 mt-2">
+          <i class="pi pi-map-marker"></i>
           <span>
             <!-- <i class="pi pi-map-marker mr-1 sm:mr-2"></i> -->
             {{location}}</span> <span class="text-200 font-light">|</span> <span>{{date}}</span>
