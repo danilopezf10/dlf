@@ -1,60 +1,34 @@
-<div class="relative sections-wrapper">
-
-  <!-- SCROLL TO TOP BUTTON -->
+<div class="sections-wrapper">
   <p-scrollTop icon="pi pi-chevron-up" />
+  <app-nav-menu></app-nav-menu>
 
-  <!-- MENU -->
-  <button
-    pButton 
-    (click)="sidebarVisible = true" 
-    icon="pi pi-bars" 
-    style="background-color: transparent; z-index: 1; left: 0.5rem;"
-    class="border-none text-white sm:ml-5 sm:mt-5 fixed top-0"
-    size="large"
-  ></button>
-  <p-sidebar [(visible)]="sidebarVisible" styleClass="sidebar w-full sm:w-20rem">
-    <div class="flex flex-column gap-6 sm:gap-5 sm:pl-4 pt-5 align-items-center sm:align-items-start">
-      <!-- <a href="#home" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Home</a> -->
-      <a href="#experience" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">Experience</a>
-      <a href="#otherprojects" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">Other projects</a>
-      <a href="#education" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">Education</a>
-      <a href="#aboutme" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-5xl sm:text-4xl hover:text-pink-600 transition-duration-300">About me</a>
-    </div>
-    <ng-template pTemplate="footer">
-      <div class="flex justify-content-center sm:justify-content-start mb-8 sm:ml-4">
-        <a href="assets/files/Daniel-Lopez-Fernandez_CV_w.pdf" download="Daniel-Lopez-Fernandez_CV.pdf" style="box-shadow: 0px 0px 20px 5px var(--pink-700); border-radius: 30%;" class="bg-pink-900">
-          <p-button [rounded]="true" label="Download CV" icon="pi pi-arrow-down" styleClass="bg-pink-600 hover:bg-pink-500 border-none text-xl sm:text-base"></p-button>
-        </a>
-      </div>
-    </ng-template>
-  </p-sidebar>
-
-  <!-- SECTIONS -->
-  <div id="home" class="section sm:pt-8">
+  <div class="section sm:pt-8" id="home">
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
       <div class="star-layer" id="stars2"></div>
-      <!-- <div class="star-layer" id="stars3"></div> -->
     </div>
     <app-personal-info></app-personal-info>
   </div>
-  <div id="experience" class="section">
+
+  <div class="section" id="experience">
     <div class="experience-bg" appParallax [ratio]="0.5"></div>
     <app-experience-section ></app-experience-section>
   </div>
-  <div id="otherprojects" class="section" >
+
+  <div class="section" id="otherprojects">
     <!-- <div class="other-projects-bg" appParallax [ratio]="1" ></div> -->
     <app-other-projects-section></app-other-projects-section>
   </div>
-  <div id="education" class="section">
+
+  <div class="section" id="education">
     <div class="education-bg" appParallax [ratio]="0.7"></div>
     <app-education-section ></app-education-section>
   </div>
-  <div id="aboutme" class="section">
+
+  <div class="section" id="aboutme">
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
       <div class="star-layer" id="stars2"></div>
-      <!-- <div class="star-layer" id="stars3"></div> -->
     </div>
     <app-aboutme-section ></app-aboutme-section>
   </div>
