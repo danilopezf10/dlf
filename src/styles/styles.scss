@@ -1,0 +1,19 @@
+/* PrimeNG */
+@import "custom-theme.scss";
+@import "primeng/resources/primeng.css";
+@import "primeicons/primeicons.css";
+@import "primeflex/primeflex.css";
+
+
+body {
+    // background: radial-gradient(ellipse at top , rgba(10,10,10) 0%, rgba(30,30,30) 100%);//linear-gradient(90deg, rgba(255,255,255) 0%, rgba(140,140,140) 200%); // background: linear-gradient(95deg, rgba(5,5,5) 0%, rgba(10,10,10) 130%); //radial-gradient(circle at top right, rgba(150,150,150) -30%, rgba(220,220,220) 30%);
+    background: linear-gradient(95deg, rgba(5,5,5) 0%, rgba(10,10,10) 130%); // Try other values like 0,0,0; 17,10,10... also tweak the 130%
+    font-family: "Raleway", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+}
+
+html {
+    scroll-behavior: smooth;
+}
