@@ -49,21 +49,6 @@
   // border-bottom: 30px solid var(--pink-600);
 }
 
-// .other-projects-bg{
-//   width: 100%;
-//   height: 100%;
-//   position: absolute;
-//   left: 0;
-//   top: 0;
-//   z-index: -1;
-//   filter: blur(5px);
-//   -webkit-filter: blur(5px);
-//   border-top: 10px solid black;
-//   border-bottom: 10px solid black;
-//   background-color: black;
-//   background-size: cover;
-// }
-
 .education-bg{
   width: 100%;
   height: 100%;
@@ -79,102 +64,17 @@
   // border-bottom: 30px solid var(--pink-600);
 }
 
-
-//////////////////////// STARS BG /////////////////////////
-
-
-// Define a keyframe animation for stars
-@keyframes animStar {
-  from {
-    transform: translateY(0px);
-  }
-  to {
-    transform: translateY(-2000px);
-  }
-}
-  
-// Function to generate multiple box-shadow values for stars
-@function multiple-box-shadow($number_of_stars) {
-  $value: "#{random(2000)}px #{random(2000)}px var(--primary-200)"; // Initial shadow
-  @for $i from 2 through $number_of_stars {
-    $value: "#{$value}, #{random(2000)}px #{random(2000)}px var(--primary-200)"; // Add more shadows
-  }
-  @return unquote($value); // Return the concatenated value
-}
-  
-// Generate different sets of box-shadow values for stars of varying sizes
-$shadows-small: multiple-box-shadow(60); // Small stars 700
-$shadows-medium: multiple-box-shadow(30); // Medium stars 200
-// $shadows-big: multiple-box-shadow(15); // Big stars 100
-  
-// Styling for the star layers container
-.star-layers {
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  left: 0;
-  top: 0;
-  z-index: -1;
-  filter: blur(2px);
-  -webkit-filter: blur(2px);
-  
-  // Styling for each star layer
-  .star-layer {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    // background-color: var(--primary-200);
-    // // background: radial-gradient( var(--primary-500) 0%, white 100%);
-    // border-radius: 50px;
-    border-radius: 50%;
-    mix-blend-mode: screen;
-    background-image: radial-gradient(
-      hsl(180, 100%, 80%),
-      hsl(180, 100%, 80%) 10%,
-      hsla(180, 100%, 80%, 0) 56%
-    );
-
-    &::after {
-      content: " ";
-      position: absolute;
-      top: 2000px;
-      width: 1px;
-      height: 1px;
-      background-color: var(--primary-200);
-      border-radius: 50px;
-    }
-  }
-  
-  // Apply styles to each star layer with different sizes
-  #stars {
-    box-shadow: $shadows-small; // Apply small star shadows
-    animation: animStar 50s linear infinite;
-    &::after {
-      box-shadow: $shadows-small; // Apply small star shadows to pseudo-element
-    }
-  }
-  
-  #stars2 {
-    width: 3px;
-    height: 3px;
-    box-shadow: $shadows-medium; // Apply medium star shadows
-    animation: animStar 100s linear infinite;
-    &::after {
-      width: 3px;
-      height: 3px;
-      box-shadow: $shadows-medium; // Apply medium star shadows to pseudo-element
-    }
-  }
-  
-  // #stars3 {
-  //   width: 7px;
-  //   height: 7px;
-  //   box-shadow: $shadows-big; // Apply big star shadows
-  //   animation: animStar 200s linear infinite;
-  //   &::after {
-  //     width: 6px;
-  //     height: 6px;
-  //     box-shadow: $shadows-big; // Apply big star shadows to pseudo-element
-  //   }
-  // }
-}
+// .other-projects-bg{
+//   width: 100%;
+//   height: 100%;
+//   position: absolute;
+//   left: 0;
+//   top: 0;
+//   z-index: -1;
+//   filter: blur(5px);
+//   -webkit-filter: blur(5px);
+//   border-top: 10px solid black;
+//   border-bottom: 10px solid black;
+//   background-color: black;
+//   background-size: cover;
+// }

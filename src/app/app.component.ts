@@ -8,6 +8,7 @@ import { EducationSectionComponent } from './components/education-section/educat
 import { AboutmeSectionComponent } from './components/aboutme-section/aboutme-section.component';
 import { ScrollTopModule } from 'primeng/scrolltop';
 import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
+import { StarsBackgroundComponent } from './components/stars-background/stars-background.component';
 
 @Component({
   selector: 'app-root',
@@ -22,6 +23,7 @@ import { NavMenuComponent } from './components/nav-menu/nav-menu.component';
     AboutmeSectionComponent,
     ScrollTopModule,
     NavMenuComponent,
+    StarsBackgroundComponent,
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.scss'
