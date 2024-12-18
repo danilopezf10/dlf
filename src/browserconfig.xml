@@ -1,8 +1,9 @@
+<!-- Used to configure how a website behaves when pinned or added to the Start menu on Microsoft Edge or older versions of Internet Explorer -->
 <?xml version="1.0" encoding="utf-8"?>
 <browserconfig>
     <msapplication>
         <tile>
-            <square150x150logo src="/mstile-150x150.png"/>
+            <square150x150logo src="assets/favicons/mstile-150x150.png"/>
             <TileColor>#da532c</TileColor>
         </tile>
     </msapplication>
