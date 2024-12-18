@@ -4,6 +4,14 @@
   <p-scrollTop icon="pi pi-chevron-up" />
 
   <!-- MENU -->
+  <button
+    pButton 
+    (click)="sidebarVisible = true" 
+    icon="pi pi-bars" 
+    style="background-color: transparent; z-index: 1; left: 0.5rem;"
+    class="border-none text-white sm:ml-5 sm:mt-5 fixed top-0"
+    size="large"
+  ></button>
   <p-sidebar [(visible)]="sidebarVisible" styleClass="sidebar w-full sm:w-20rem">
     <div class="flex flex-column gap-6 sm:gap-5 sm:pl-4 pt-5 align-items-center sm:align-items-start">
       <!-- <a href="#home" (click)="closeSidebar()" style="text-decoration: none;" class="text-700 text-2xl uppercase">Home</a> -->
@@ -20,8 +28,6 @@
       </div>
     </ng-template>
   </p-sidebar>
-  <!-- <p-button (onClick)="sidebarVisible = true" icon="pi pi-plus" styleClass="menu-button" class="menu-button" /> -->
-  <button pButton (click)="sidebarVisible = true" icon="pi pi-bars" style="background-color: transparent; z-index: 1; left: 0.5rem;" class="border-none text-white sm:ml-5 sm:mt-5 fixed top-0" size="large"></button>
 
   <!-- SECTIONS -->
   <div id="home" class="section sm:pt-8">
@@ -32,13 +38,12 @@
     </div>
     <app-personal-info></app-personal-info>
   </div>
-  <!-- <div class="blur-line"></div> -->
   <div id="experience" class="section">
     <div class="experience-bg" appParallax [ratio]="0.5"></div>
     <app-experience-section ></app-experience-section>
   </div>
   <div id="otherprojects" class="section" >
-    <!-- <div class="other-projects-bg" appParallax [ratio]="1" ></div>    --><!-- style="background: linear-gradient(to right, black 30%, var(--pink-600) 220%) ;" -->
+    <!-- <div class="other-projects-bg" appParallax [ratio]="1" ></div> -->
     <app-other-projects-section></app-other-projects-section>
   </div>
   <div id="education" class="section">
@@ -46,7 +51,6 @@
     <app-education-section ></app-education-section>
   </div>
   <div id="aboutme" class="section">
-    <!-- <div class="" appParallax [ratio]="0.3"></div> -->
     <div class="star-layers overflow-hidden">
       <div class="star-layer" id="stars"></div>
       <div class="star-layer" id="stars2"></div>
